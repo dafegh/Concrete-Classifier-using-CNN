@@ -53,7 +53,7 @@ def main():
 
 def predict(image):
     #classifier_model = tf.keras.models.load_model(r'/C:/Users/antwi/Downloads/my_mode.h5')
-    classifier_model = "C:/Users/David/Downloads/modeltrans_dir.h5" 
+    classifier_model = "modeltrans_dir.h5" 
     IMAGE_SHAPE = (224, 224,3)
     model = load_model(classifier_model, compile=False, custom_objects={'KerasLayer': hub.KerasLayer})
     test_image = image.resize((224,224))
