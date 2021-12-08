@@ -26,7 +26,7 @@ with open("customs.css") as f:
 
 st.title('Concrete Classifier')
 
-st.markdown("Welcome to this simple web application that concrete into crack and non crack")
+st.markdown("Welcome to this simple web application that classifies concrete into crack and no crack")
 
 
 def main():
