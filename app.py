@@ -68,7 +68,7 @@ def predict(image):
     scores = tf.nn.softmax(predictions[0])
     scores = scores.numpy()
     image_class = class_names[np.argmax(scores)]
-    result = "The image uploaded is {}".format(image_class)
+    result = "The image uploaded is a {}".format(image_class)
     return result
 
     
